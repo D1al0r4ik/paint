@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(65, 64, 64);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+    user-select: none;
+}
+
+.palette{
+    width: 5vw;
+    height: 45vw;
+    gap: 16px;
+    background-color: rgb(94, 77, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.colorCell, .buttonCell {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.colorCell:hover {
+    border: 5px solid black;
+    opacity: 0.5;
+}
+
+img{
+    border: 2px solid black;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+#canvas {
+    width: 80vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.kletki {
+
+        background-color: white;
+        outline: none;
+        border: none;
+}
+
+.kletki:hover {
+    background-color: gray;
+    opacity: 0.2;
+}
+
